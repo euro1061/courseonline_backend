@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model CST_Users {
+  userId    String   @id @db.VarChar(30)
+  username  String   @unique
+  password  String
+  firstName String
+  lastName  String
+  nickName  String?
+  verifyStatus verifyStatusEnum
+  verifyCode String?
+  verifiedAt DateTime?
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum verifyStatusEnum {
+  waitConfirmEmail
+  verifyComplete
+}

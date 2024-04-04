@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "C:\\Users\\kanja\\OneDrive\\Desktop\\My-WorkShop\\CourseOnline\\CourseOnline_BackEnd\\src\\logs\\.0128c95a39b8240d5051cd4ebd3085d62bd950b6-audit.json",
+    "files": [
+        {
+            "date": 1699583392543,
+            "name": "C:\\Users\\kanja\\OneDrive\\Desktop\\My-WorkShop\\CourseOnline\\CourseOnline_BackEnd\\src\\logs\\log-2023-11-10.log",
+            "hash": "6d67a6700a09cf95d3051bdbdeb41d298d73a334041ca6fafe998a344e782eb2"
+        }
+    ],
+    "hashType": "sha256"
+}
